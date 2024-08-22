@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Policy Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .language-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multilingual Policy Proposal</h1>
+    
+    <div class="language-buttons">
+        <button onclick="changeLanguage('english')">English</button>
+        <button onclick="changeLanguage('french')">Français</button>
+        <button onclick="changeLanguage('arabic')">العربية</button>
+    </div>
+
+    <div id="english" class="content active">
+        <h2>Adopting a Results-Based Management Approach in the Public Sector</h2>
+        
+        <h3>Executive Summary</h3>
+        <p>This policy proposes the implementation of a results-based management (RBM) approach across the public sector to enhance government efficiency, accountability, and development outcomes. RBM is a management strategy focusing on achieving measurable results and promoting accountability. By adopting RBM, the government can better align its activities with national priorities, track progress towards goals, and make evidence-based decisions to improve public service delivery.</p>
+        
+        <!-- Add more English content here -->
+    </div>
+
+    <div id="french" class="content">
+        <h2>Adoption d'une Approche de Gestion Axée sur les Résultats pour Améliorer l'Efficacité du Secteur Public</h2>
+        
+        <h3>Résumé Exécutif</h3>
+        <p>Cette politique propose la mise en œuvre d'une approche de gestion axée sur les résultats (GAR) dans l'ensemble du secteur public pour améliorer l'efficacité gouvernementale, la responsabilisation et les résultats de développement. La GAR est une stratégie de gestion qui se concentre sur l'obtention de résultats mesurables et la promotion de la responsabilisation. En adoptant la GAR, le gouvernement peut mieux aligner ses activités sur les priorités nationales, suivre les progrès vers les objectifs et prendre des décisions fondées sur des preuves pour améliorer la prestation des services publics.</p>
+        
+        <!-- Add more French content here -->
+    </div>
+
+    <div id="arabic" class="content">
+        <h2>تبني نهج الإدارة القائمة على النتائج في القطاع العام</h2>
+        
+        <h3>الملخص التنفيذي</h3>
+        <p>تقترح هذه السياسة تنفيذ نهج الإدارة القائمة على النتائج (RBM) عبر القطاع العام لتعزيز كفاءة الحكومة والمساءلة ونتائج التنمية. RBM هي استراتيجية إدارية تركز على تحقيق نتائج قابلة للقياس وتعزيز المساءلة. من خلال تبني RBM، يمكن للحكومة أن توائم أنشطتها بشكل أفضل مع الأولويات الوطنية، وتتبع التقدم نحو الأهداف، واتخاذ قرارات مبنية على الأدلة لتحسين تقديم الخدمات العامة.</p>
+        
+        <!-- Add more Arabic content here -->
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
